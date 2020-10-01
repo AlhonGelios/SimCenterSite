@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimCenter</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="promo">
+            <img class="logo" src="./assets/img/logo.svg" alt="logo">
+            <div class="admin">
+                <a href="#" class="signup">Регистрация</a>
+                <a href="#" class="singin">Войти</a>
+            </div>
+        </div>
+        <div class="container">
+            <h1 class="title">Мультипрофильный аккредитационно-симуляционный центр</h1>
+            <nav class="navbar">
+                <a href="#">Главная</a>|
+                <a href="#">Расписание</a>|
+                <a href="#">Наши возможности</a>|
+                <a href="#">Аккредитация</a>|
+                <a href="#">Контакты</a>
+            </nav>
+        </div>
+        <hr>
+    </header>
+
+    <section class="timetable">
+        <div class="container">
+            <div class="button-filter">Фильтр</div>
+            <div class="navigation">
+                <div>
+                <img src="./assets/icon/arrow.svg" alt="prev" class="prev">
+                    <select name="month" id="select-month">
+                        <option value="Январь" selected>Январь</option>
+                        <option value="Февраль">Февраль</option>
+                        <option value="Март">Март</option>
+                        <option value="Апрель">Апрель</option>
+                        <option value="Май">Май</option>
+                        <option value="Июнь">Июнь</option>
+                        <option value="Июль">Июль</option>
+                        <option value="Август">Август</option>
+                        <option value="Сентябрь">Сентябрь</option>
+                        <option value="Октябрь">Октябрь</option>
+                        <option value="Ноябрь">Ноябрь</option>
+                        <option value="Декабрь">Декабрь</option>
+                    </select>
+                    <img src="./assets/icon/arrow.svg" alt="next" class="next">   
+                </div>
+                <div class="year">2020</div>
+                <img src="./assets/icon/calendar.png" alt="selectDate" class="calendar">
+            </div>
+        </div>
+
+        <div class="cards-day">
+            <div class="day-week">Пн</div>
+            <div class="day-week">Вт</div>
+            <div class="day-week">Ср</div>
+            <div class="day-week">Чт</div>
+            <div class="day-week">Пт</div>
+            <div class="day-week">Сб</div>
+            <div class="day-week">Вс</div>
+            <div class="card-day"> 
+                <div class="card-day__number">1</div>
+                <div class="card-day__event"></div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

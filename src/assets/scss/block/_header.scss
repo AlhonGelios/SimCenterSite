@@ -1,0 +1,42 @@
+.header {
+    min-height: 200px;
+    .promo{
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo {
+        width: 30%;
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+    .title {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .navbar {
+        display: flex;
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+        a {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+    }
+    hr {
+        display: block;
+        margin-top: 20px;
+    }
+    .admin {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        margin-right: 80px;
+        margin-top: 20px;
+        a {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+    }
+}
+

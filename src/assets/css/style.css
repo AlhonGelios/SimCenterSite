@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic-ext");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.title {
+  font-size: 36px;
+  font-weight: 300;
+  text-align: center; }
+
+.header {
+  min-height: 200px; }
+  .header .promo {
+    display: flex;
+    justify-content: space-between; }
+  .header .logo {
+    width: 30%;
+    margin-top: 20px;
+    margin-left: 50px; }
+  .header .title {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .header .navbar {
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    align-items: center; }
+    .header .navbar a {
+      margin-left: 15px;
+      margin-right: 15px; }
+  .header hr {
+    display: block;
+    margin-top: 20px; }
+  .header .admin {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-right: 80px;
+    margin-top: 20px; }
+    .header .admin a {
+      margin-bottom: 15px;
+      font-size: 16px; }
+
+.button-filter {
+  display: inline-block;
+  position: absolute;
+  top: 50vh;
+  left: 0;
+  width: 25px;
+  height: 70px;
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #969696;
+  writing-mode: vertical-rl;
+  opacity: 0.6;
+  user-select: none; }
+
+.timetable {
+  padding: 20px 0;
+  background-color: #dbdbdb;
+  margin: 0 auto; }
+  .timetable .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
+    .timetable .navigation select {
+      font-size: 20px;
+      margin: 0 15px;
+      border-radius: 0.5rem;
+      width: 140px; }
+    .timetable .navigation .next {
+      transform: rotate(180deg);
+      cursor: pointer; }
+    .timetable .navigation .prev {
+      cursor: pointer; }
+    .timetable .navigation .year {
+      font-size: 36px;
+      font-weight: 700;
+      margin-left: 50px; }
+    .timetable .navigation .calendar {
+      margin-left: 30px;
+      cursor: pointer; }
+  .timetable .cards-day {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); }
+    .timetable .cards-day .day-week {
+      border: 2px solid #868686;
+      list-style-type: none;
+      text-align: center; }
+    .timetable .cards-day .card-day {
+      display: flex;
+      flex-direction: column;
+      margin-top: 5px; }
+      .timetable .cards-day .card-day .card-day__number {
+        margin: 0 auto;
+        font-size: 20px;
+        font-weight: 700; }

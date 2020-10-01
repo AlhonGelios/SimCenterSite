@@ -1,0 +1,69 @@
+.button-filter {
+    display: inline-block;
+    position: absolute;
+    top: 50vh;
+    left: 0;
+    width: 25px;
+    height: 70px;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: rgb(150, 150, 150);
+    writing-mode: vertical-rl;
+    opacity: 0.6;
+    user-select: none;
+}
+.timetable {
+    padding: 20px 0;
+    background-color: rgb(219, 219, 219);
+    margin: 0 auto;
+    .navigation{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        select {
+            font-size: 20px;
+            margin: 0 15px;
+            border-radius: 0.5rem;
+            width: 140px;
+
+        }
+        .next {
+            transform: rotate(180deg);
+            cursor: pointer;
+        }
+        .prev {
+            cursor: pointer;
+        }
+        .year {
+            font-size: 36px;
+            font-weight: 700;
+            margin-left: 50px;
+        }
+        .calendar {
+            margin-left: 30px;
+            cursor: pointer;
+        }
+    }
+
+    .cards-day {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        .day-week{
+            border:2px solid rgb(134, 134, 134);
+            list-style-type: none;
+            text-align: center;
+        }
+        .card-day {
+            display: flex;
+            flex-direction: column;
+            margin-top: 5px;
+            .card-day__number{
+                margin: 0 auto;
+                font-size: 20px;
+                font-weight: 700;
+            }
+        }
+    }
+}
