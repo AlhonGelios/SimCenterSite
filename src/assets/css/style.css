@@ -94,15 +94,17 @@ a {
   .timetable .cards-day {
     margin-top: 20px;
     display: grid;
-    grid-template-columns: repeat(7, 1fr); }
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 20px, repeat(5, 1fr); }
     .timetable .cards-day .day-week {
-      border: 2px solid #868686;
+      border: 2px solid black;
       list-style-type: none;
       text-align: center; }
     .timetable .cards-day .card-day {
       display: flex;
       flex-direction: column;
-      margin-top: 5px; }
+      border: 1px solid gray;
+      height: 10vh; }
       .timetable .cards-day .card-day .card-day__number {
         margin: 0 auto;
         font-size: 20px;

@@ -50,15 +50,18 @@
         margin-top: 20px;
         display: grid;
         grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 20px, repeat(5, 1fr);
         .day-week{
-            border:2px solid rgb(134, 134, 134);
+            border:2px solid black;
             list-style-type: none;
             text-align: center;
         }
+
         .card-day {
             display: flex;
             flex-direction: column;
-            margin-top: 5px;
+            border: 1px solid gray;
+            height: 10vh;
             .card-day__number{
                 margin: 0 auto;
                 font-size: 20px;
